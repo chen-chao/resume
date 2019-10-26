@@ -125,3 +125,11 @@
   {\par \textit{#1}. ~ #2 \par}
   \vspace{0.85ex}
 }
+
+\newcommand{\note}[1]{
+  {\par
+    \noindent\begin{tabular}{@{}p{0.82\textwidth}@{}}
+               #1
+             \end{tabular}
+  \par}
+}
