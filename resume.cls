@@ -55,6 +55,11 @@
   [\titlerule]                 % Inserts a horizontal line after the heading
 \titlespacing*{\section}{0cm}{*1.8}{*1.8}
 
+\RequirePackage{tabto}
+\newcommand{\symbolsection}[2]{
+  \section[#2]{#1\tabto{1.25em}#2}
+}
+
 \titleformat{\subsection}
   {\large\raggedright}
   {}{0em}
@@ -117,6 +122,6 @@
 }
 
 \newcommand{\role}[2]{
-  {\par \textit{#1} ~ #2 \par}
+  {\par \textit{#1}. ~ #2 \par}
   \vspace{0.85ex}
 }
