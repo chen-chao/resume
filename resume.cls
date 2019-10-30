@@ -70,7 +70,7 @@
   \section[#1]{#1 \hfill #2}%
 }
 \newcommand{\datedsubsection}[2]{%
-  \subsection[#1]{#1 \hfill #2}%
+  \subsection[#1]{\textbf{#1} \hfill #2}%
 }
 \newcommand{\datedline}[2]{%
   {\par #1 \hfill #2 \par}%
