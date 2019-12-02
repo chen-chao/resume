@@ -47,7 +47,7 @@
 \setlist[enumerate]{topsep=0.25em, leftmargin=1.5pc}
 \RequirePackage[super]{nth}
 
-\titleformat{\section}         % Customise the \section command 
+\titleformat{\section}         % Customise the \section command
   {\Large\scshape\raggedright} % Make the \section headers large (\Large),
                                % small capitals (\scshape) and left aligned (\raggedright)
   {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
@@ -95,23 +95,23 @@
 \newcommand{\phone}[1]{\faPhone\ {#1}}
 % defines one's linkedin
 % usage: \linkedin{<linkedin>}
-\newcommand{\linkedin}[2][]{\faLinkedin\ 
+\newcommand{\linkedin}[2][]{\faLinkedin\
   \ifthenelse{\isempty{#1}}%
     {\href{#2}{#2}}
     {\href{#2}{#1}}}
-\newcommand{\linkedinsquare}[2][]{\faLinkedinSquare\ 
+\newcommand{\linkedinsquare}[2][]{\faLinkedinSquare\
   \ifthenelse{\isempty{#1}}%
     {\href{#2}{#2}}
     {\href{#2}{#1}}}
 % defines one's GitHub
 % usage: \github{<github>}
-\newcommand{\github}[2][]{\faGithub\ 
+\newcommand{\github}[2][]{\faGithub\
   \ifthenelse{\isempty{#1}}%
     {\href{#2}{#2}}
     {\href{#2}{#1}}}
 % defines one's homepage
 % usage: \homepage{<homepage>}
-\newcommand{\homepage}[2][]{\faLink\ 
+\newcommand{\homepage}[2][]{\faLink\
   \ifthenelse{\isempty{#1}}%
     {\href{#2}{#2}}
     {\href{#2}{#1}}}
@@ -122,7 +122,7 @@
 }
 
 \newcommand{\role}[2]{
-  {\par \textit{#1}. ~ #2 \par}
+  {\par \textit{#1} ~ #2 \par}
   \vspace{0.85ex}
 }
 
@@ -131,5 +131,9 @@
     \noindent\begin{tabular}{@{}p{0.82\textwidth}@{}}
                #1
              \end{tabular}
-  \par}
+           }
 }
+
+% Local Variables:
+% TeX-engine: luatex
+% End:
